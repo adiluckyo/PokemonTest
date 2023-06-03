@@ -5,25 +5,12 @@ import './content.css';
 import {useQuery, useQueryClient} from "react-query";
 import {JSX} from "react/jsx-runtime";
 import _ from "lodash";
+import {Pokemon, PokemonDetail} from "../model/pokemon";
 
-const {Content, Footer} = Layout;
+const {Content} = Layout;
 
 type PokemonSort = "Name" | "ID"
-
-type Pokemon = {
-    name: string,
-    url: string,
-    detail: PokemonDetail
-}
-
-type PokemonDetail = {
-    //we focus only image and id
-    sprites: {
-        back_default: string
-    }
-    id: number
-}
-export const Pokemon: React.FC = () => {
+export const PokemonComponent: React.FC = () => {
     const queryKey = "pokemons"
     const {
         token: {colorBgContainer},
