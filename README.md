@@ -2,6 +2,12 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Dependencies
+
+- lodash `npm install --save-dev @types/lodash`
+- Ant Design
+- ReactQuery
+
 ## Available Scripts
 
 In the project directory, you can run:
